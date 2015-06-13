@@ -1926,6 +1926,7 @@ public final class PlaybackService extends Service
 	 * @param song The Song to display information about.
 	 * @param state The state. Determines whether to show paused or playing icon.
 	 */
+	@android.annotation.SuppressLint("NewApi")
 	public Notification createNotification(Song song, int state)
 	{
 		boolean playing = (state & FLAG_PLAYING) != 0;
