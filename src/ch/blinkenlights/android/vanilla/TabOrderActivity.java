@@ -113,7 +113,7 @@ public class TabOrderActivity extends Activity implements View.OnClickListener, 
 
 		SharedPreferences.Editor editor = PlaybackService.getSettings(this).edit();
 		editor.putString("tab_order", new String(out));
-		editor.commit();
+		editor.apply();
 	}
 
 	/**

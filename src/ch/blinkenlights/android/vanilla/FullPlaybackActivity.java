@@ -659,7 +659,7 @@ public class FullPlaybackActivity extends PlaybackActivity
 			SharedPreferences.Editor editor = PlaybackService.getSettings(this).edit();
 			editor.putBoolean("visible_controls", mControlsVisible);
 			editor.putBoolean("visible_extra_info", mExtraInfoVisible);
-			editor.commit();
+			editor.apply();
 			break;
 		}
 		case MSG_UPDATE_PROGRESS:

@@ -62,7 +62,7 @@ public class FilebrowserStartActivity extends PlaybackActivity {
 		mSaveButton.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
 				mPrefEditor.putString(PrefKeys.FILESYSTEM_BROWSE_START, mCurrentPath);
-				mPrefEditor.commit();
+				mPrefEditor.apply();
 				finish();
 			}});
 	}
