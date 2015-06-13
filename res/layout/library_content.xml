@@ -37,6 +37,7 @@ THE SOFTWARE.
 		android:layout_height="wrap_content"
 		android:layout_gravity="bottom|left">
 		<LinearLayout
+			android:orientation="horizontal"
 			android:id="@+id/limiter_layout"
 			android:layout_width="wrap_content"
 			android:layout_height="fill_parent" />
